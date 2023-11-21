@@ -1,4 +1,4 @@
 # PacMan
 
-- [doc](pacman_0.001.pdf)
+- [doc](doc/pacman_0.001.pdf)
 - [url]()
