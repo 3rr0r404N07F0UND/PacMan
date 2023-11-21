@@ -1,0 +1,8 @@
+
+-- Active: 1675230299476@@127.0.0.1@3306@c17st11
+CREATE TABLE IF NOT EXISTS `top_list` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `score` char(50) DEFAULT NULL,
+  `level` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

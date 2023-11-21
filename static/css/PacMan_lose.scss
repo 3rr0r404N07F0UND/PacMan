@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  cursor: url("../img/games-pixel-pac-man-and-cherry-pointer.png"), default;
+}
+html,
+body {
+  width: 100%;
+  height: 100vw;
+  overflow: hidden;
+}
+.youLose {
+  width: 500 / 1920 * 100vw;
+  height: 500 / 1920 * 100vw;
+}
+main {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  box-sizing: border-box;
+  padding-top: 35/1920 * 100vw;
+  h1 {
+    color: white;
+    font-family: "Press Start 2P", cursive;
+    font-size: 60/1920 * 100vw;
+    text-align: center;
+    padding-top: 35/1920 * 100vw;
+  }
+  .youLose {
+    font-size: 30/1920 * 100vw;
+    text-align: center;
+  }
+}
+button {
+  width: 400/1920 * 100vw;
+  height: 100/1920 * 100vw;
+  box-sizing: border-box;
+  font-size: 60/1920 * 100vw;
+  font-family: "Press Start 2P", cursive;
+  border: 5px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 30px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition: color 0.2s, border-color 0.2s;
+  &:hover {
+    color: red;
+    //border-color: red;
+    cursor: url("../img/games-pixel-pac-man-and-cherry-cursor.png"), pointer;
+  }
+}
+.yourScore {
+  text-align: center;
+  & > div {
+    display: inline-block;
+  }
+  & p {
+    text-align: left;
+    margin-top: 30/1920 * 100vw;
+    font-size: 36/1920 * 100vw;
+    font-family: "Press Start 2P", cursive;
+    color: white;
+  }
+}
+.topList {
+  margin-top: 20/1920 * 100vw;
+  height: 400/1920 * 100vw;
+  * {
+    font-family: "Press Start 2P", cursive;
+    font-size: 20/1920 * 100vw;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  overflow-y: scroll;
+  text-align: center;
+  & > div {
+    display: inline-block;
+    & > p {
+      text-align: left;
+      color: white;
+    }
+  }
+}
+ul {
+  &:first-child > li {
+    color: powderblue;
+  }
+  margin-bottom: 10/1920 * 100vw;
+  * {
+    color: white;
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  & > li {
+    list-style: none;
+    margin: auto;
+    padding-right: 10/1920 * 100vw;
+  }
+}

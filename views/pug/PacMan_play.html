@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icons/favicon-16x16.png">
+    <link rel="manifest" href="./img/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-chche">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/PacMan_play.css">
+    <script src="./js/ghost.js" defer></script>
+    <script src="./js/pacman.js" defer></script>
+    <script src="./js/game.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous"></script>
+    <title>P4CM4N</title>
+  </head>
+  <body>
+    <main>
+      <h1>PAC-MAN</h1>
+      <div class="gameSection">
+        <canvas id="canvas" width="420" height="500"></canvas>
+        <div><img id="animation" src="./img/animations.gif" alt=""><img id="ghosts" src="./img/ghost.png" alt=""></div>
+      </div>
+    </main>
+    <form action="/next" method="POST">
+      <input id="levelInfo" type="hidden" name="level" value="1">
+      <input id="scoreInfo" type="hidden" name="score" value="0">
+      <input type="hidden" name="name">
+      <button id="submitButton" type="submit"></button>
+    </form>
+    <form action="/lose" method="POST">
+      <input type="hidden" name="level" value="1">
+      <input id="deadScore" type="hidden" name="score" value="0">
+      <input type="hidden" name="name">
+      <button id="loseButton" type="submit"></button>
+    </form>
+  </body>
+</html>
